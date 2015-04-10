@@ -14,6 +14,9 @@
          url('../fonts/royalarthouse13.ttf') format('truetype'),
          url('../fonts/royalarthouse13.svg#RoyalArtHouse13Regular') format('svg');
 }
+label{
+	color:#fff;
+}
 .fullwrapper{
 	background: #AAD04E;
 	height: auto;
@@ -40,8 +43,19 @@
 	height: auto;
 }
 .footerwrapper{
+	min-height: 100px;
 	background: #000;
 }
 .footertext{
 	color: #fff;
+}
+.adm-job-data-form{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.job-data-form-container{
+	min-height: 500px;
+}
+.dispaly-job-table-wrap{
+    text-align: center;
 }
