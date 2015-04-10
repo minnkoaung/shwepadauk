@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'myeng';
+    src: url('../fonts/eng_01.eot');
+    src: url('../fonts/eng_01.eot') format('embedded-opentype'),
+         url('../fonts/eng_01.woff') format('woff'),
+         url('../fonts/eng_01.ttf') format('truetype'),
+         url('../fonts/eng_01.svg#AvantGardeBkBTBook') format('svg');
+}
+@font-face {
+    font-family: 'mymyan';
+    src: url('../fonts/royalarthouse13.eot');
+    src: url('../fonts/royalarthouse13.eot') format('embedded-opentype'),
+         url('../fonts/royalarthouse13.woff') format('woff'),
+         url('../fonts/royalarthouse13.ttf') format('truetype'),
+         url('../fonts/royalarthouse13.svg#RoyalArtHouse13Regular') format('svg');
+}
+.fullwrapper{
+	background: #AAD04E;
+	height: auto;
+	padding: 10px 0 0 0;
+}
+.mytitle{
+	font-family: 'myeng';
+	font-size: 4em;
+}
+.mysubtitle{
+	background: #3C3C3C;
+	color: #fff;
+	padding: 5px;
+	display: inline-block;
+	margin-top: -10px;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+.mynav{
+	margin-top: 20px;
+}
+.middlewrapper{
+	background: #3C3C3C;
+	height: auto;
+}
+.footerwrapper{
+	background: #000;
+}
+.footertext{
+	color: #fff;
+}
