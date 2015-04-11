@@ -5,9 +5,9 @@
 
     $displayJobData= new Data_Entry($db);
     $diplayData = $displayJobData->displayJobData();
-    $onerow = $diplayData->fetchObject();
-    $test = print_r($onerow);
-    
+    $onerow = $diplayData->fetchAll();
+    $test = print_r($onerow, true);
+    return "<pre>$test</pre>";
   /*  $displayJobData = include_once "views/display-job-data-html.php";
 	return $displayJobData ;*/
 
