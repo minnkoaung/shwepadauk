@@ -19,6 +19,7 @@
 			                    <li><a href='admin.php?page=admin-card-data'>Insert Card Data</a></li>
 			                    <li><a href='#'>Menu3</a></li>
 			                    <li><a href='#'>Support</a></li>
+			                    <li class=''><a href='index.php'>Website View</a></li>
 			                  </ul>
 			                  <ul class='nav navbar-nav navbar-right'>
 			                    <li class='dropdown'>

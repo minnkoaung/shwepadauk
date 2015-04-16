@@ -7,7 +7,6 @@
 		}
 
 		public function saveData($name, $file_type, $file_description, $file_url){
-			//$entrySql= "INSERT INTO job_data(name, file_type, file_description, file_url, created_date) VALUES('$name', '$file_type', '$file_description', '$file_url', now())";
 			$entrySql= "INSERT INTO job_data(name, file_type, file_description, file_url, created_date) VALUES(?, ?, ?, ?, now())";
 			$entryStatement = $this->db->prepare($entrySql);
 			$formData = array($name, $file_type, $file_description, $file_url);
@@ -19,7 +18,7 @@
 					trigger_error($msg);
 			}
 		}
-		
+
         public function displayJobData(){
             $sql = "SELECT * From job_data";
             $statement = $this->db->prepare($sql);
