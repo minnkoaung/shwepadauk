@@ -6,5 +6,4 @@
     $diplayData = $displayJobData->displayJobData();
     $displayJobData = include_once "views/display-job-data-html.php";
 	return $displayJobData ;
-
  ?>
