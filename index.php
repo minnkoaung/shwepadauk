@@ -21,9 +21,6 @@
 		$pageToLoad='display-job-data';
 	}
 	$pageData->content = include_once"controllers/$pageToLoad.php";
-
-	
-	
 	$page = include_once "views/page.php";
 	echo $page;
  ?>

@@ -4,7 +4,7 @@
                                     <table class='table table-bordered table-hover' >
                                         <thead>
                                             <tr class='success'>
-                                                <th style='text-align:center;'>Sr.No</th>
+                                                <!-- <th style='text-align:center;'>Sr.No</th> -->
                                                 <th style='text-align:center;'>File Name</th>
                                                 <th style='text-align:center;'>File Url</th>
                                                 <th style='text-align:center;'>Detail View</th>
@@ -15,12 +15,12 @@
                                         <tbody style='text-align:center;'>";
             while($row=$diplayData->fetch()){
             $dispalyTableData .= "<tr class='warning'>";
-            $dispalyTableData .= "<td>".$row['id']."</td>";
+            //$dispalyTableData .= "<td>".$row['id']."</td>";
             $dispalyTableData .= "<td>".$row['name']."</td>";
             $dispalyTableData .= "<td>".$row['file_url']."</td>";
-            $dispalyTableData .= "<td><a href='#'>Click To View</a></td>";
-            $dispalyTableData .= "<td><a href='#'>Click To Edit</a></td>";
-            $dispalyTableData .= "<td><a href='index.php?page=delete_job_data&amp;id=".$row['id']."'>Click To Delete</a></td>";
+            $dispalyTableData .= "<td><a href='#' class='btn btn-success'>Click To View</a></td>";
+            $dispalyTableData .= "<td><a href='#' class='btn btn-warning'>Click To Edit</a></td>";
+            $dispalyTableData .= "<td><a href='index.php?page=delete_job_data&amp;id=".$row['id']."' class='btn btn-danger deleteJobData'>Click To Delete</a></td>";
             $dispalyTableData .= "</tr>";
         }
         $dispalyTableData .= " </tbody></table></div></div>";

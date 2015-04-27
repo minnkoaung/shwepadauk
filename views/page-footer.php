@@ -18,6 +18,16 @@
 					});*/
 				</script>
 		        </body>
+		       <!--
+		       <script href='js/jquery-1.11.2.min.js'></script>
+		       <script>
+					$(document).ready(function(){
+						$('.submittJobData').click(function(){
+							alert('Your job entry has been successfully submitted');
+						});
+					});
+		       </script>
+		       -->
       		</html>
 	";
  ?>

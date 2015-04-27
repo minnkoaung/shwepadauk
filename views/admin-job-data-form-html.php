@@ -8,7 +8,7 @@
 		                <div class='form-group'>
 		                  <label for='name' class='col-sm-2 control-label'>Name</label>
 		                  <div class='col-sm-9'>
-		                    <input type='text' class='form-control' name='name' placeholder='Insert Job Name'>
+		                    <input type='text' class='form-control' name='name' placeholder='Insert Job Name' required>
 		                  </div>
 		                </div>
 		                <div class='form-group'>
@@ -29,7 +29,7 @@
 		                <div class='form-group'>
 		                  <label for='file_description' class='col-sm-2 control-label'>File Description</label>
 		                  <div class='col-sm-9'>
-		                     <select class='form-control' name='file_description'>
+		                     <select class='form-control' name='file_description' >
 		                        <option>Business Card</option>
 		                        <option>Calender</option>
 		                        <option>Flyer/Pamphlat</option>
@@ -54,7 +54,7 @@
 		                </div>
 		                <div class='form-group'>
 		                  <div class='col-sm-offset-2 col-sm-9'>
-		                    <button type='submit' class='btn btn-danger' name='saveJob'>Insert Job</button>
+		                    <button type='submit' class='btn btn-danger submittJobData' name='saveJob'>Insert Job</button>
 		                  </div>
 		                </div>
 		        </form>

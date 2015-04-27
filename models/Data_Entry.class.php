@@ -20,7 +20,7 @@
 		}
 
         public function displayJobData(){
-            $sql = "SELECT * From job_data";
+            $sql = "SELECT * From job_data ORDER BY id DESC";
             $statement = $this->db->prepare($sql);
             try{
                 $statement->execute();
