@@ -1,6 +1,6 @@
 <?php 
-	return "<p>The column".$id." you want to delet is done</p>
-			<a href='index.php'/>Go back</a>
+	return "<p class='alert alert-info'>The column No. ".$id." has been permanently deleted from your Database</p>
+			<a href='index.php' class='btn btn-success'>Go back</a>
 	
 	"
 
