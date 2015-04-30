@@ -12,22 +12,17 @@
 		          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		          <script src='js/jquery-1.11.2.min.js'></script>
 		          <script src='js/bootstrap.min.js'></script>
-				<script type='text/JavaScript'>
-					/*$(document).ready(function(){
-						console.log('js is initialized');
-					});*/
-				</script>
 		        </body>
-		       <!--
 		       <script href='js/jquery-1.11.2.min.js'></script>
 		       <script>
+					/*
 					$(document).ready(function(){
-						$('.submittJobData').click(function(){
-							alert('Your job entry has been successfully submitted');
+						$('.deleteJobData').click(function(){
+							aler('Are you sure to delete this column?');
 						});
-					});
+					}); */
 		       </script>
-		       -->
+		       
       		</html>
 	";
  ?>

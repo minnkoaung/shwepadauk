@@ -48,8 +48,8 @@
 		                 <div class='form-group'>
 		                  <label for='file_url' class='col-sm-2 control-label'>File Url</label>
 		                  <div class='col-sm-9'>
-		                  	<input type='file' class='form-control' name='file_url' value='Insert File Url'> 
-		                     <!-- <input type='text' class='form-control' name='file_url' placeholder='Insert File Url'> -->
+		                  	<!-- <input type='file' class='form-control' name='file_url' value='Insert File Url'> --> 
+		                     <input type='text' class='form-control' name='file_url' placeholder='Insert File Url' required>
 		                  </div>
 		                </div>
 		                <div class='form-group'>
