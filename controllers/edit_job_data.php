@@ -16,9 +16,13 @@
 	$editEntrySubmitted =  isset($_GET['id']);
 	if($editEntrySubmitted){
 		$id = $_GET['id'];
-		$editEntryData->editJobData($id);
+		$test = $editEntryData->editJobData($id);
 	}
-	
-	$editOutputView = include "views/editJobData-html.php";
-	return $editOutputView;
+//	 while($row=$test->fetch()){
+//			 $output =  $row['name'];
+//			 return $output;
+//		 }
+//	
+		$editOutputView = include "views/editJobData-html.php";
+		return $editOutputView;
  ?>
