@@ -54,6 +54,18 @@
             }
             return $statement;
         }
+
+          public function updateJobData($id){
+            $sql = "DELETE FROM job_data WHERE id=$id";
+            $statement = $this->db->prepare($sql);
+            try{
+                $statement->execute();
+            }catch(Exception $e){
+                $exceptionMessage = "<p>You tried to run this sql: $sql</p><p>Exception: $e</p>";
+                trigger_error($exceptionMessage);
+            }
+            return $statement;
+        }
 	}
 
 
