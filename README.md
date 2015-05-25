@@ -6,3 +6,4 @@ Data control system for Shwe Padauk Printing Co.,Ltd
 
 22.5.2015-> processing on update jobdata file
 24.5.2015-> Update issue fixed
+24.5.2015-> Deteail view demo table has been add (CUDE demo finished)
