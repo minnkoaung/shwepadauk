@@ -55,8 +55,9 @@
             return $statement;
         }
 
-          public function updateJobData($id){
-            $sql = "DELETE FROM job_data WHERE id=$id";
+          public function updateJobData($name, $file_type, $file_description, $file_url){
+            $id = $_POST['id'];
+            $sql = "UPDATE job_data SET name='$name', file_type='$file_type', file_url='$file_url', file_description='$file_description', modified_date=now() WHERE id=$id";
             $statement = $this->db->prepare($sql);
             try{
                 $statement->execute();
@@ -66,6 +67,19 @@
             }
             return $statement;
         }
+
+         public function detailJobData($id){
+            $sql = "SELECT * FROM job_data WHERE id=$id";
+            $statement = $this->db->prepare($sql);
+            try{
+                $statement->execute();
+            }catch(Exception $e){
+                 $exceptionMessage = "<p>You tried to run this sql: $sql</p><p>Exception: $e</p>";
+                trigger_error($exceptionMessage);   
+            }
+            return $statement;
+        }
+
 	}
 
 

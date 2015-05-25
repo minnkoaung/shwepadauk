@@ -18,7 +18,7 @@
             //$dispalyTableData .= "<td>".$row['id']."</td>";
             $dispalyTableData .= "<td>".$row['name']."</td>";
             $dispalyTableData .= "<td>".$row['file_url']."</td>";
-            $dispalyTableData .= "<td><a href='#' class='btn btn-success'>Click To View</a></td>";
+            $dispalyTableData .= "<td><a href='index.php?page=detail_job_data&amp;id=".$row['id']."' class='btn btn-success'>Click To View</a></td>";
             $dispalyTableData .= "<td><a href='index.php?page=edit_job_data&amp;id=".$row['id']."' class='btn btn-warning'>Click To Edit</a></td>";
             $dispalyTableData .= "<td><a href='index.php?page=delete_job_data&amp;id=".$row['id']."' class='btn btn-danger deleteJobData'>Click To Delete</a></td>";
             $dispalyTableData .= "</tr>";
