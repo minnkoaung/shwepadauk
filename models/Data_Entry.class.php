@@ -69,7 +69,8 @@
         }
 
          public function detailJobData($id){
-            $sql = "SELECT * FROM job_data WHERE id=$id";
+            $id = $_GET['id'];
+            $sql = "SELECT * FROM job_data WHERE id='$id'";
             $statement = $this->db->prepare($sql);
             try{
                 $statement->execute();
