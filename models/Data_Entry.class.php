@@ -31,6 +31,18 @@
             return $statement;
         }
 
+        public function displayCardData(){
+            $sql = "SELECT * From data_keep ORDER BY id DESC";
+            $statement = $this->db->prepare($sql);
+            try{
+                $statement->execute();
+            }catch(Exception $e){
+                $exceptionMessage = "<p>You tried to run this sql: $sql</p><p>Exception: $e</p>";
+                trigger_error($exceptionMessage);
+            }
+            return $statement;
+        }
+
         public function deleteJobData($id){
         	$sql = "DELETE FROM job_data WHERE id=$id";
         	$statement = $this->db->prepare($sql);
