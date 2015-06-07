@@ -5,7 +5,7 @@
 		public function __construct($db){
 			$this->db = $db;
 		}
-
+        //to save job data to mysql database
 		public function saveData($name, $file_type, $file_description, $file_url){
 			$entrySql= "INSERT INTO job_data(name, file_type, file_description, file_url, created_date) VALUES(?, ?, ?, ?, now())";
 			$entryStatement = $this->db->prepare($entrySql);
@@ -18,7 +18,7 @@
 					trigger_error($msg);
 			}
 		}
-
+        //to display job data on Front-End
         public function displayJobData(){
             $sql = "SELECT * From job_data ORDER BY id DESC";
             $statement = $this->db->prepare($sql);
@@ -31,6 +31,20 @@
             return $statement;
         }
 
+        //to save Card data to mysql database
+        public function saveCardData($item_code, $item_name, $year, $product_no, $color, $type, $price_300, $price_300_500, $price_above_500, $card_image, $contact){
+            $entrySql= "INSERT INTO data_keep(item_code, item_name, year, product_no, color, type, price_300, price_300_500, price_above_500, card_image, contact, created_date) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now())";
+            $entryStatement = $this->db->prepare($entrySql);
+            $formData = array($item_code, $item_name, $year, $product_no, $color, $type, $price_300, $price_300_500, $price_above_500, $card_image, $contact);
+            try{
+                $entryStatement->execute($formData);
+            }
+            catch(Expection $e){
+                    $msg = "<p>You tried to run this sql: $entrySQL<p> <p>Exception: $e</p>";
+                    trigger_error($msg);
+            }
+        }
+        // to display Card data on Front-end
         public function displayCardData(){
             $sql = "SELECT * From data_keep ORDER BY id DESC";
             $statement = $this->db->prepare($sql);

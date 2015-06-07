@@ -12,7 +12,9 @@
                                                 <th style='text-align:center;'>Year</th>
                                                 <th style='text-align:center;'>Color</th>
                                                 <th style='text-align:center;'>Type</th> 
-                                                <th style='text-align:center;'>Price</th>
+                                                <th style='text-align:center;'>Price in 300</th>
+                                                <th style='text-align:center;'>Price 300- 500</th>
+                                                <th style='text-align:center;'>Price above 500</th>
                                                 <th style='text-align:center;'>Contact Mobile No.</th>                           
                                             </tr>
                                         </thead>
@@ -28,7 +30,9 @@
             $dispalyTableData .= "<td>".$row['year']."</td>";
             $dispalyTableData .= "<td>".$row['color']."</td>";
             $dispalyTableData .= "<td>".$row['type']."</td>";
-            $dispalyTableData .= "<td>".$row['price']."</td>";
+            $dispalyTableData .= "<td>".$row['price_300']."</td>";
+             $dispalyTableData .= "<td>".$row['price_300_500']."</td>";
+              $dispalyTableData .= "<td>".$row['price_above_500']."</td>";
             $dispalyTableData .= "<td>".$row['contact']."</td>";
             $dispalyTableData .= "</tr>";
         }
