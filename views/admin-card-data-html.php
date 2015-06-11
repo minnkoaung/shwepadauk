@@ -93,6 +93,7 @@
 		                <div class='form-group'>
 		                  <label for='card_image' class='col-sm-2 control-label'>Upload Card Image</label>
 		                  <div class='col-sm-9'>
+		                  	<input type='hidden' name='action' value='image' >
 		                  	<input type='file' class='form-control' name='card_image'> 
 		                  </div>
 		                </div>

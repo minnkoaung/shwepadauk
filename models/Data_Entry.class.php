@@ -32,10 +32,10 @@
         }
 
         //to save Card data to mysql database
-        public function saveCardData($item_code, $item_name, $year, $product_no, $color, $type, $price_300, $price_300_500, $price_above_500, $card_image, $contact){
-            $entrySql= "INSERT INTO data_keep(item_code, item_name, year, product_no, color, type, price_300, price_300_500, price_above_500, card_image, contact, created_date) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now())";
+        public function saveCardData($item_code, $item_name, $year, $product_no, $product_of, $color, $type, $price_300, $price_300_500, $price_above_500, $card_image, $contact){
+            $entrySql= "INSERT INTO data_keep(item_code, item_name, year, product_no, product_of, color, type, price_300, price_300_500, price_above_500, card_image, contact, created_date) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now())";
             $entryStatement = $this->db->prepare($entrySql);
-            $formData = array($item_code, $item_name, $year, $product_no, $color, $type, $price_300, $price_300_500, $price_above_500, $card_image, $contact);
+            $formData = array($item_code, $item_name, $year, $product_no, $product_of, $color, $type, $price_300, $price_300_500, $price_above_500, $card_image, $contact);
             try{
                 $entryStatement->execute($formData);
             }
