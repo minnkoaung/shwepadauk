@@ -62,6 +62,9 @@ label{
 .dispaly-job-table-wrap{
     text-align: center;
 }
+.imgupload-btn{
+	height: auto;
+}
 /* .menuNavi:hover{
 	background: #AAD04E !important;
 	color: #000 !important;

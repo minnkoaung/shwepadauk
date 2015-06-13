@@ -2,7 +2,7 @@
 	error_reporting(E_ALL);
 	ini_set("display_errors", 1);
 	include_once "models/Data_Entry.class.php";
-	include('models/Image_Upload.class.php');	
+	include_once "models/Image_Upload.class.php";	
 	$entryData= new Data_Entry($db);
 	$editorSubmitted = isset($_POST['saveCard']);
 	if($editorSubmitted){
@@ -20,22 +20,26 @@
 		$card_image=$_FILES['card_image']['name'];
 		$contact=$_POST['contact'];
 		$entryData->saveCardData($item_code, $item_name, $year, $product_no, $product_of, $color, $type, $price_300, $price_300_500, $price_above_500, $card_image, $contact);
-	}
-//dertermined var name from image.upload.class	
-	$dir_dest = (isset($_GET['dir']) ? $_GET['dir'] : 'tmp');
-	$dir_pics = (isset($_GET['pics']) ? $_GET['pics'] : $dir_dest);
- 	if ((isset($_POST['action']) ? $_POST['action'] : (isset($_GET['action']) ? $_GET['action'] : '')) == 'image') {
-	    $handle = new Upload($_FILES['card_image']);
-	    if ($handle->uploaded) {
-	        $handle->image_resize            = true;
-	        $handle->image_ratio_y           = true;
-	        $handle->image_x                 = 300;
-	        $handle->Process('images/card_images');
+	
+		$dir_dest = (isset($_GET['dir']) ? $_GET['dir'] : 'tmp');
+		$dir_pics = (isset($_GET['pics']) ? $_GET['pics'] : $dir_dest);
+	 	if ((isset($_POST['action']) ? $_POST['action'] : (isset($_GET['action']) ? $_GET['action'] : '')) == 'image') {
+		    $handle = new Upload($_FILES['card_image']);
+		    if ($handle->uploaded) {
+		        $handle->image_resize            = true;
+		        $handle->image_ratio_y           = true;
+		        $handle->image_x                 = 300;
+		        $handle->Process('images/card_images');
 
-	    }
+		    }
+		}
+
+	$adminCardDataOutput =  include_once "views/admin-card-data-successed-html.php";
+	}else{
+	$adminCardDataOutput =  include_once "views/admin-card-data-html.php";	
 	}
-	//$x = $card_image=$_FILES['card_image']['tmp_name'];
-	$x =  include_once "views/admin-card-data-html.php";
-	return $x;
+
+	
+	return $adminCardDataOutput;
 
  ?>
