@@ -85,7 +85,7 @@
 		                  </div>
 		                </div>
 		                <div class='form-group'>
-		                  <label for='price_above_500' class='col-sm-2 control-label'>Price in 300-500 Stocks</label>
+		                  <label for='price_above_500' class='col-sm-2 control-label'>Price above 500 Stocks</label>
 		                  <div class='col-sm-9'>
 		                     <input type='text' class='form-control' name='price_above_500' placeholder='Insert Price above 500 Stocks' required>
 		                  </div>

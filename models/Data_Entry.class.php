@@ -57,6 +57,19 @@
             return $statement;
         }
 
+        public function detailCardData($id){
+            $id = $_GET['id'];
+            $sql = "SELECT * FROM data_keep WHERE id='$id'";
+            $statement = $this->db->prepare($sql);
+            try{
+                $statement->execute();
+            }catch(Exception $e){
+                 $exceptionMessage = "<p>You tried to run this sql: $sql</p><p>Exception: $e</p>";
+                trigger_error($exceptionMessage);   
+            }
+            return $statement;
+        }
+
         public function deleteJobData($id){
         	$sql = "DELETE FROM job_data WHERE id=$id";
         	$statement = $this->db->prepare($sql);
