@@ -106,6 +106,9 @@ label{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.detailCardImage{
+	border-radius: 50px;
+}
 @media (min-width: @screen-sm-min) {
 
 	.bar2{

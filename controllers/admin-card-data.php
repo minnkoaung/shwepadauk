@@ -29,10 +29,13 @@
 		        $handle->image_resize            = true;
 		        $handle->image_ratio_y           = true;
 		        $handle->image_x                 = 300;
+		      
 		        $handle->Process('images/card_images');
 
 		    }
 		}
+
+		$imageLocation = "<img src='".$handle->file_dst_pathname."'>";
 
 	$adminCardDataOutput =  include_once "views/admin-card-data-successed-html.php";
 	}else{
