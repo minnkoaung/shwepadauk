@@ -66,8 +66,8 @@ $detailCardDataTable = "  <div class='container display_card_data_view_container
             $detailCardDataTable .=   "</div><!-- card-detail-view-row end -->";
 
             $detailCardDataTable .=   "<div class='row'>
-                <a class='col-md-2 btn btn-danger mybutton' href='#'><span class='glyphicon glyphicon-remove'></span>&nbspDelete Card</a>
-                <a class='col-md-2 btn btn-success mybutton' href='#'><span class='glyphicon glyphicon-refresh'></span>&nbspEdit Card</a>
+                <a class='col-md-2 btn btn-danger mybutton' href='admin.php?page=delete_card_data&amp;id=".$row['id']."'><span class='glyphicon glyphicon-remove'></span>&nbspDelete Card</a>
+                <a class='col-md-2 btn btn-success mybutton' href='admin.php?page=edit_card_data&amp;id=".$row['id']."'><span class='glyphicon glyphicon-refresh'></span>&nbspEdit Card</a>
               </div>";
         
         

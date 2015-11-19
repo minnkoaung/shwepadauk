@@ -14,6 +14,10 @@
          url('../fonts/royalarthouse13.ttf') format('truetype'),
          url('../fonts/royalarthouse13.svg#RoyalArtHouse13Regular') format('svg');
 }
+.businessName{
+	text-decoration: none !important;
+	color: #000 !important;
+}
 label{
 	color:#fff;
 }
@@ -107,7 +111,8 @@ label{
 	padding-bottom: 10px;
 }
 .detailCardImage{
-	border-radius: 50px;
+	border: 10px solid #888;
+	box-shadow: 4px 4px 10px #000;
 }
 @media (min-width: @screen-sm-min) {
 

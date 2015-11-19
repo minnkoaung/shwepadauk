@@ -4,12 +4,10 @@
 	$deleteEntrySubmitted = isset($_GET['id']);
 	if($deleteEntrySubmitted){
 		$id = $_GET['id'];
-		$deleteEntryData->deleteJobData($id);
+		$deleteEntryData->deleteCardData($id);
 	}
-	
-	$deleteConfrim= include"views/deleteJobData-html.php";
+	$deleteConfrim= include"views/deleteCardData-html.php";
 	return $deleteConfrim;
-
 	//$id = "<h1>This is the action for deleting data</h1>";
 	//return $id;
  ?>

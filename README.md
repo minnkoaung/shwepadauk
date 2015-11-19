@@ -8,4 +8,5 @@ Data control system for Shwe Padauk Printing Co.,Ltd
 24.5.2015-> Update issue fixed
 24.5.2015-> Deteail view demo table has been add (CUDE demo finished)
 11.6.2015-> Image Upload Class worked
-12.6.2015-> A bug for Image Upload has been fixed. 
+12.6.2015-> A bug for Image Upload has been fixed.
+19.11.2013->Working on CardEdit Function

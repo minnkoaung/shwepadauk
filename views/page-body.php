@@ -5,6 +5,7 @@
           <div class='container-fluid fullwrapper'>
               <div class='container innerwrapper'>
                 <div class='row'>
+                  <a href='index.php' class='businessName'>
                     <div class='col-md-2 logowrap'>
                         <img src='images/logo.png'>
                     </div><!--logowrap-->
@@ -12,6 +13,7 @@
                       <h1 class='mytitle'>Shwe Padauk</h1>
                       <h4 class='mysubtitle'>Wedding Card & General Printing</h4>
                     </div>
+                  </a>
                 </div>
                 $pageData->nav
               </div><!-- innerwrapper -->

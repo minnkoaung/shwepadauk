@@ -14,7 +14,7 @@
 				$entryStatement->execute($formData);
 			}
 			catch(Expection $e){
-					$msg = "<p>You tried to run this sql: $entrySQL<p> <p>Exception: $e</p>";
+					$msg = "<p>You tried to run this sql: $entrySql<p> <p>Exception: $e</p>";
 					trigger_error($msg);
 			}
 		}
@@ -40,7 +40,7 @@
                 $entryStatement->execute($formData);
             }
             catch(Expection $e){
-                    $msg = "<p>You tried to run this sql: $entrySQL<p> <p>Exception: $e</p>";
+                    $msg = "<p>You tried to run this sql: $entrySql<p> <p>Exception: $e</p>";
                     trigger_error($msg);
             }
         }
@@ -70,6 +70,18 @@
             return $statement;
         }
 
+        public function deleteCardData($id){
+            $sql = "DELETE FROM data_keep WHERE id=$id";
+            $statement = $this->db->prepare($sql);
+            try{
+                $statement->execute();
+            }catch(Exception $e){
+                 $exceptionMessage = "<p>You tried to run this sql: $sql</p><p>Exception: $e</p>";
+                trigger_error($exceptionMessage);   
+            }
+            return $statement;
+        }
+
         public function deleteJobData($id){
         	$sql = "DELETE FROM job_data WHERE id=$id";
         	$statement = $this->db->prepare($sql);
@@ -84,6 +96,22 @@
 		
 		 public function editJobData($id){
             $sql = "SELECT * FROM job_data WHERE id=$id";
+            $statement = $this->db->prepare($sql);
+            try{
+                $statement->execute();
+            }catch(Exception $e){
+                $exceptionMessage = "<p>You tried to run this sql: $sql</p><p>Exception: $e</p>";
+                trigger_error($exceptionMessage);
+            }
+            return $statement;
+        }
+
+        /**
+         * @param $id
+         * @return mixed
+         */
+        public function editCardData($id){
+            $sql = "SELECT * FROM data_keep WHERE id=$id";
             $statement = $this->db->prepare($sql);
             try{
                 $statement->execute();
