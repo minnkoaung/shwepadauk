@@ -15,7 +15,7 @@
 			                <!-- Collect the nav links, forms, and other content for toggling -->
 			                <div class='collapse navbar-collapse ' id='bs-example-navbar-collapse-1'>
 			                  <ul class='nav navbar-nav'>
-			                    <li><a href='index.php?page=display-job-data' class='menuNavi'>Job Data</a></li>
+			                    <li><a href='index.php?page=display-job-data-card-view' class='menuNavi'>Job Data</a></li>
 			                    <li><a href='index.php?page=display-card-data' class='menuNavi'>Card Data</a></li>
 			                    <li><a href='#' class='menuNavi'>Menu3</a></li>
 			                    <li><a href='#' class='menuNavi'>Support</a></li>

@@ -9,10 +9,12 @@
                     <div class='col-md-2 logowrap'>
                         <img src='images/logo.png'>
                     </div><!--logowrap-->
+                    
                     <div class='col-md-10'>
                       <h1 class='mytitle'>Shwe Padauk</h1>
                       <h4 class='mysubtitle'>Wedding Card & General Printing</h4>
                     </div>
+                 
                   </a>
                 </div>
                 $pageData->nav

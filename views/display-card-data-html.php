@@ -26,7 +26,7 @@
             $dispalyTableData .= "<td>".$row['price_300']."</td>";
            //  $dispalyTableData .= "<td>".$row['price_300_500']."</td>";
            //   $dispalyTableData .= "<td>".$row['price_above_500']."</td>";
-            $dispalyTableData .= "<td><a href='index.php?page=detail_card_data&amp;id=".$row['id']."' class='btn btn-success deleteJobData'>Click To View Detail</a></td>";
+            $dispalyTableData .= "<td><a href='admin.php?page=detail_card_data&amp;id=".$row['id']."' class='btn btn-success deleteJobData'>Click To View Detail</a></td>";
             $dispalyTableData .= "</tr>";
         }
         $dispalyTableData .= " 

@@ -106,7 +106,7 @@
 		                
 		                <div class='form-group'>
 		                  <div class='col-sm-offset-2 col-sm-9'>
-		                    <button type='submit' class='btn btn-danger submittJobData' name='saveCard'>Insert Card Info</button>
+		                    <button type='submit' class='btn btn-success submittJobData' name='saveCard'>Insert Card Info</button>
 		                  </div>
 		                </div>
 		        </form>

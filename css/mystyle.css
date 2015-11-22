@@ -114,6 +114,13 @@ label{
 	border: 10px solid #888;
 	box-shadow: 4px 4px 10px #000;
 }
+.modal-header{
+	background: #AAD04E;
+}
+
+.modal-footer{
+	background: #3C3C3C;
+}
 @media (min-width: @screen-sm-min) {
 
 	.bar2{

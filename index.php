@@ -18,7 +18,7 @@
 	if($navigationIsClicked){
 		$pageToLoad = $_GET['page'];
 	}else{
-		$pageToLoad='display-job-data';
+		$pageToLoad='display-job-data-card-view';
 	}
 	$pageData->content = include_once"controllers/$pageToLoad.php";
 	$page = include_once "views/page.php";
