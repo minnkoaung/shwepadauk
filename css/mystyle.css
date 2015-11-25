@@ -121,6 +121,23 @@ label{
 .modal-footer{
 	background: #3C3C3C;
 }
+.card-card-view{
+	background: #fff;
+	border: 3px solid #EEEBE9;
+}
+.card-card-view:hover{
+	transition:all 0.3s;
+	box-shadow: 3px 3px 10px #000;
+}
+.card-card-view h4{
+	text-align: center;
+	color: #000;
+}
+.card-card-view img{
+	border-radius: 15px;
+	margin-bottom: 10px;
+	height: 150px;
+}
 @media (min-width: @screen-sm-min) {
 
 	.bar2{
