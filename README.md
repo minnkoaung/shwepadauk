@@ -10,3 +10,13 @@ Data control system for Shwe Padauk Printing Co.,Ltd
 11.6.2015-> Image Upload Class worked
 12.6.2015-> A bug for Image Upload has been fixed.
 19.11.2013->Working on CardEdit Function
+
+
+For Production 
+-----------------------------------
+(1)minified-css
+(2)minified-js
+(3)deleted comments
+(4)remove all error reporting
+(6)delete-shwepadauk-new-backup.html
+
