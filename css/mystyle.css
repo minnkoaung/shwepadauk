@@ -138,6 +138,29 @@ label{
 	margin-bottom: 10px;
 	height: 150px;
 }
+.loginwrap{
+	background: #fff;
+	padding:30px 30px 30px 30px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	border: 5px solid #E1E0DF;
+}
+.form-group label{
+	font-family: "myeng";
+	letter-spacing: 2px;
+	font-size: 1.2em;
+	color: #000;
+}
+.form-group input{
+	font-family: "myeng";
+	letter-spacing: 2px;
+	font-size: 1.2em;
+	height: 50px;
+}
+.form-group input:focus{
+	border: 2px solid #AAD04E;
+	box-shadow: none;
+}
 @media (min-width: @screen-sm-min) {
 
 	.bar2{

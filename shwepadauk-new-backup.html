@@ -296,7 +296,7 @@
                     
 
     </div> -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
             <ul style="margin:0px;padding:0px;list-style:none;">  
               <li class="col-md-2 col-sm-3 col-xs-6 foo2" style="">
@@ -307,7 +307,25 @@
                 </a>
               </li>
             </ul>
-      </div> <!-- row end -->
+      </div> row end
+    </div> -->
+
+    <div class="container">
+      <div class="row">
+        <div class='col-md-4 col-md-offset-4 loginwrap'>
+          <form role='form' action='contollers/login.php'>
+            <div class='form-group'>
+              <label for='user-name'>Email address</label>
+              <input type='text' name='user-name' class='form-control' placeholder='Enter User Name' required=''>
+            </div>
+            <div class='form-group'>
+              <label for='password'>Password</label>
+              <input type='password' name='password' class='form-control' placeholder='Enter Password' required=''>
+            </div>
+            <button type='submit' class='btn btn-primary'>Log In</button>
+          </form>
+        </div> <!-- loginwrap -->
+      </div>
     </div>
 
     <!-- middlewrapper stop-->

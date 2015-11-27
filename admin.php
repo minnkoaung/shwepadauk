@@ -18,7 +18,7 @@
 	if($navigationIsClicked){
 		$pageToLoad = $_GET['page'];
 	}else{
-		$pageToLoad='admin-job-data';
+		$pageToLoad='login-controller';
 	}
 	$pageData->content = include_once"controllers/$pageToLoad.php";
 
