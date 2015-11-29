@@ -30,7 +30,7 @@ label{
 	padding: 10px 0 0 0;
 }
 .mytitle{
-	font-family: 'myeng';
+	font-family: 'myeng' ;
 	font-size: 4em;
 }
 .mysubtitle{
@@ -161,6 +161,30 @@ label{
 	border: 2px solid #AAD04E;
 	box-shadow: none;
 }
+/* -------------------Pagination view------------------ */
+#result-bar{
+	margin: 0px; padding: 0px;
+}
+#navigation-bar{
+	margin-bottom: 20px;
+}
+
+ #navigation-bar a  {
+ 	padding: 5px;
+ 	width: 1em;
+ 	background: #fff;
+ 	text-decoration: none;
+ 	margin-top: 3px;
+ }
+  #navigation-bar a:hover{
+  	transition:all 0.8s;
+  	box-shadow: 1px 1px 5px #000;
+  }
+ #navigation-bar span.current {
+ 	padding: 5px;
+ 	background: #333;
+ 	color: #888;
+
 @media (min-width: @screen-sm-min) {
 
 	.bar2{
